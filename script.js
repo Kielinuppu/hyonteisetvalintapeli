@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const { statementIndex } = gameQuestions[currentRound];
         const audioPrefix = 'V_';
         const audioMap = {
-            0: 'muurahainen_lentaa',
+            0: 'Muurahainen_lentaa',
             1: 'muurahainen_rakentaa',
             2: 'kuoriainen_kipittaa',
             3: 'kuoriainen_kuorsaa',
