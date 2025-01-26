@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const finalFeedback = document.getElementById('finalFeedback');
     const scoreText = document.getElementById('scoreText');
     const nextArrow = document.getElementById('nextArrow');
+    const speakerIcon = document.getElementById('speakerIcon');
 
     // Väitteet ja niiden vastaavat kuvat (index+1.png)
     const statements = [
@@ -129,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const { statementIndex } = gameQuestions[currentRound];
         const audioPrefix = 'V_';
         const audioMap = {
-            0: 'Muurahainen_lentaa',
+            0: 'muurahainen_lentaa',
             1: 'muurahainen_rakentaa',
             2: 'kuoriainen_kipittaa',
             3: 'kuoriainen_kuorsaa',
@@ -212,4 +213,5 @@ document.addEventListener('DOMContentLoaded', () => {
     trueButton.addEventListener('click', () => checkAnswer(true));
     falseButton.addEventListener('click', () => checkAnswer(false));
     nextArrow.addEventListener('click', nextQuestion);
+    speakerIcon.addEventListener('click', playQuestionAudio);
 });
